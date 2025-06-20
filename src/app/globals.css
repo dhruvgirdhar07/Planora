@@ -24,3 +24,24 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+.signup-content form input{
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  height: 40px;
+  width: 327px;
+}
+.signup-content form input:focus{
+  border: 1px solid #00bfa6 !important;
+}
+.fullname-input::placeholder{
+  color: #989898;
+  font-size: 18px;
+  padding: 10px 10px 10px 45px;
+}
+.input-wrapper{
+  position: relative;
+}
+.fullname-icon{
+  position: absolute;
+  top: 7px;
+  left: 10px;
+}
