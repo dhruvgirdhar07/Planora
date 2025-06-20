@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export default function SignUp() {
   return (
@@ -6,6 +7,10 @@ export default function SignUp() {
       className="signup-section min-h-screen bg-cover bg-center bg-no-repeat content-center justify-items-center"
       style={{ backgroundImage: "url('/signup-bg.jpg')" }}
     >
+      <Link href="home">
+        <p className="home-bread">Home</p>
+      </Link>
+
       <div className="inner-container-signup flex w-[1111px] h-[421px] bg-white shadow-lg">
         <img src="/signup-vector.svg" alt="" className="ml-[46px]" />
         <div className="signup-content pl-[57px] pt-[37px] justify-items-center">
@@ -52,9 +57,11 @@ export default function SignUp() {
               />
             </div>
           </form>
-          <button className="w-[120px] h-[44px] text-[18px] mt-[30px] rounded-full font-[600] text-[#00BFA6] bg-[#FFD54F] hover:opacity-90 transition cursor-pointer">
-            Sign Up
-          </button>
+          <Link href="login">
+            <button className="w-[120px] h-[44px] text-[18px] mt-[30px] rounded-full font-[600] text-[#00BFA6] bg-[#FFD54F] hover:opacity-90 transition cursor-pointer">
+              Sign Up
+            </button>
+          </Link>
         </div>
       </div>
     </section>
