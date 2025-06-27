@@ -45,9 +45,7 @@ body {
   top: 7px;
   left: 10px;
 }
-form input {
-  padding-left: 2.5rem;
-}
+
 form input:focus{
   border: 2px solid #00bfa6 !important;
 }
@@ -57,4 +55,19 @@ form input:focus{
   position: absolute;
   top: 30px;
   left: 85px;
+}
+.create-trip-form form input{
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.create-trip-form form input:focus-visible{
+  border: 2px solid #00bfa6 !important;
+}
+.create-trip-form form input:focus{
+  border: 2px solid #00bfa6 !important;
+  outline: #00bfa6;
+}
+.form-icon{
+  position: absolute;
+  top: 15px;
+  right: 45px;
 }
