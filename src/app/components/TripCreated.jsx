@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRef } from "react";
 import TripCard from "./TripCard";
 
-export default function CreateTrip() {
+export default function TripCreated() {
   const startRef = useRef(null);
   const endRef = useRef(null);
   return (
@@ -26,9 +26,13 @@ export default function CreateTrip() {
             </div>
           </Link>
 
-          {/* <div className="trips">
-            <TripCard/>
-          </div> */}
+          <Link href={"/dashboard"}>
+          <div className="trips">
+            <TripCard />
+          </div>
+          </Link>
+
+          
         </div>
         <Link href={"/home"}>
           <div className="logout flex text-[18px] gap-[15px] cursor-pointer">
@@ -43,15 +47,14 @@ export default function CreateTrip() {
       >
         <div className="create-trip-form w-[860px] h-[485px] py-[20px] px-[42px] bg-[#ffffff]">
           <div className="flex justify-between">
-          <h1 className="text-[#00bfa6] font-[600] text-[36px]">
-            CREATE YOUR TRIP !
-          </h1>
-             <Link href={"/tripcreated"}>
-            <div className="create-trip-btn h-auto w-auto bg-[#FFD54F] mt-[8px] rounded-[30px] max-h-[32px] min-w-[82px] flex justify-center items-center px-[7px] py-[10px] cursor-pointer">
-              <p className="text-[#00bfa6] text-[18px] ">Submit</p>
-            </div>
-          </Link>
-
+            <h1 className="text-[#00bfa6] font-[600] text-[36px]">
+              CREATE YOUR TRIP !
+            </h1>
+            <Link href={"/tripcreated"}>
+              <div className="create-trip-btn h-auto w-auto bg-[#FFD54F] mt-[8px] rounded-[30px] max-h-[32px] min-w-[82px] flex justify-center items-center px-[7px] py-[10px] cursor-pointer">
+                <p className="text-[#00bfa6] text-[18px] ">Submit</p>
+              </div>
+            </Link>
           </div>
           <form action="" className="flex flex-col gap-[8px]">
             <div className="trip-name-form-input">
